@@ -27,7 +27,7 @@ def assemble(code):
 
 def compile_c(codepath):
     out = tempfile.NamedTemporaryFile()
-    flags = ["-I" + EFIINC, "-I" + EFIINC + "/x86_64", "-fno-stack-protector", "-fpic",
+    flags = ["-std=gnu99", "-I" + EFIINC, "-I" + EFIINC + "/x86_64", "-fno-stack-protector", "-fpic",
              "-fshort-wchar", "-mno-red-zone", "-Wall",
              "-ffreestanding", "-mno-sse", "-mno-mmx"]
     subprocess.check_call([CC, "-c", codepath, "-o", out.name] + flags)
