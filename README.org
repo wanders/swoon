@@ -1,0 +1,15 @@
+* SWOON
+
+/A tool for those who can't keep track of two files/
+
+Builds an efi binary that contains a linux kernel and initrd.
+
+
+#+BEGIN_EXAMPLE
+shell$ ./swoon.py --kernel bzImage --initrd initrd.gz --output mybundle.efi
+#+END_EXAMPLE
+
+* Dependencies
+
+gnu-efi
+
