@@ -1,7 +1,7 @@
 #include <efi.h>
 #include <efilib.h>
 
-#define VERSION "0.1"
+#define VERSION "0.2"
 
 extern char _kernel_data_begin[];
 extern char _kernel_data_end[];
